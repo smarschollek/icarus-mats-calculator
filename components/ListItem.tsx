@@ -1,8 +1,8 @@
-import { Item } from "../../types/Item"
+import { Item } from "../types/Item"
 import styled from 'styled-components'
 import Image from "next/image"
-import { Divider } from "../../components/Divider"
 import { MouseEventHandler } from "react"
+import { Divider } from "./Divider"
 
 const Wrapper = styled.div`
     display: flex;

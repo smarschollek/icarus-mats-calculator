@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 import styled from 'styled-components'
+import LeftContainer from '../components/LeftContianer'
+import RightContainer from '../components/RightContainer'
 import { Items } from '../data/items'
 import { Item } from '../types/Item'
-import LeftContainer from './components/LeftContianer'
-import RightContainer from './components/RightContainer'
 
 
 const Container = styled.div`

@@ -2,11 +2,13 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { Form, FormControl, Stack } from 'react-bootstrap'
 import styled from 'styled-components'
-import { Divider } from '../../components/Divider'
-import { Items } from '../../data/items'
-import { Component } from '../../types/Component'
-import { Item } from '../../types/Item'
+import { Items } from '../data/items'
+import { Component } from '../types/Component'
+import { Item } from '../types/Item'
+import { Divider } from './Divider'
 import ListItem from './ListItem'
+
+
 
 const Container = styled.div`
   height: 100%;

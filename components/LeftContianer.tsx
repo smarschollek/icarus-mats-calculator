@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { FormControl } from 'react-bootstrap'
 import styled from 'styled-components'
-import { Divider } from '../../components/Divider'
-import { Item } from '../../types/Item'
+import { Divider } from './Divider'
+import { Item } from '../types/Item'
 import ListItem from './ListItem'
 
 const Container = styled.div`
