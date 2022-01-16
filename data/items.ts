@@ -2,8 +2,371 @@ import { Item } from "../types/Item";
 
 export const Items : Item[] = [
   {
+    name : 'Cloth Arms Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 80,
+            itemName: 'Fiber'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Cloth Legs Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 120,
+            itemName: 'Fiber'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Cloth Chest Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 120,
+            itemName: 'Fiber'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Cloth Feet Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 40,
+            itemName: 'Fiber'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Cloth Head Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 80,
+            itemName: 'Fiber'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Composite Arms Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 2,
+            itemName: 'Aluminium Ingot'
+          },
+          { 
+            amount: 8,
+            itemName: 'Composites'
+          },
+          { 
+            amount: 6,
+            itemName: 'Steel Screw'
+          },
+          { 
+            amount: 2,
+            itemName: 'Carbon Fiber'
+          },
+          { 
+            amount: 2,
+            itemName: 'Refined Gold'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Composite Chest Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 6,
+            itemName: 'Aluminium Ingot'
+          },
+          { 
+            amount: 24,
+            itemName: 'Composites'
+          },
+          { 
+            amount: 12,
+            itemName: 'Steel Screw'
+          },
+          { 
+            amount: 2,
+            itemName: 'Carbon Fiber'
+          },
+          { 
+            amount: 2,
+            itemName: 'Refined Gold'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Composite Feet Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 4,
+            itemName: 'Aluminium Ingot'
+          },
+          { 
+            amount: 12,
+            itemName: 'Composites'
+          },
+          { 
+            amount: 6,
+            itemName: 'Steel Screw'
+          },
+          { 
+            amount: 2,
+            itemName: 'Carbon Fiber'
+          },
+          { 
+            amount: 2,
+            itemName: 'Refined Gold'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Composite Head Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 4,
+            itemName: 'Aluminium Ingot'
+          },
+          { 
+            amount: 12,
+            itemName: 'Composites'
+          },
+          { 
+            amount: 6,
+            itemName: 'Steel Screw'
+          },
+          { 
+            amount: 2,
+            itemName: 'Carbon Fiber'
+          },
+          { 
+            amount: 2,
+            itemName: 'Refined Gold'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Composite Legs Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 6,
+            itemName: 'Aluminium Ingot'
+          },
+          { 
+            amount: 18,
+            itemName: 'Composites'
+          },
+          { 
+            amount: 6,
+            itemName: 'Steel Screw'
+          },
+          { 
+            amount: 2,
+            itemName: 'Carbon Fiber'
+          },
+          { 
+            amount: 2,
+            itemName: 'Refined Gold'
+          },
+        ]
+      }
+    ]
+  },
+
+
+
+
+
+  {
+    name : 'Fur Arms Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 4,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 8,
+            itemName: 'Fur'
+          },
+          { 
+            amount: 2,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Fur Chest Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 8,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 24,
+            itemName: 'Fur'
+          },
+          { 
+            amount: 6,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Fur Feet Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 6,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 12,
+            itemName: 'Fur'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Fur Head Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 4,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 12,
+            itemName: 'Fur'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Fur Legs Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 8,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 18,
+            itemName: 'Fur'
+          },
+          { 
+            amount: 6,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    name : 'Rope',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 12,
+            itemName: 'Fiber'
+          },
+        ]
+      },
+      {
+        components : [
+          { 
+            amount: 5,
+            itemName: 'Leather'
+          },
+        ]
+      }
+    ]
+  },
+
+  {
+    name : 'Fur',
+    collectable: true
+  },
+  {
+    name : 'Fiber',
+    collectable: true
+  },
+
+
+
+  {
     name : 'Directional Worklamp',
-    imageUrl: '/images/ITEM_Directional_Worklamp.png',
     recipes: [
       {
         components : [
@@ -29,7 +392,6 @@ export const Items : Item[] = [
   },
   {
     name: 'Glass',
-    imageUrl: '/images/ITEM_Glass.png',
     recipes: [
       {
         components: [
@@ -44,7 +406,6 @@ export const Items : Item[] = [
   },
   {
     name: 'Composites',
-    imageUrl: '/images/ITEM_Composites.png',
     recipes: [
       {
         components: [
@@ -59,7 +420,6 @@ export const Items : Item[] = [
   },
   {
     name: 'Electric Carpentry Bench',
-    imageUrl: '/images/ITEM_Electric_Carpentry_Bench.png',
     recipes: [
       {
         components: [
@@ -90,7 +450,6 @@ export const Items : Item[] = [
   },
   {
     name: 'Electric Dehumidifier',
-    imageUrl: '/images/ITEM_Electric_Dehumidifier.png',
     recipes: [
       {
         components: [
@@ -121,7 +480,6 @@ export const Items : Item[] = [
   },
   {
     name: 'Electric Furnace',
-    imageUrl: '/images/ITEM_Electric_Furnace.png',
     recipes: [
       {
         components: [
@@ -151,7 +509,6 @@ export const Items : Item[] = [
   },
   {
     name: 'Electric Masonry Bench',
-    imageUrl: '/images/ITEM_Electric_Masonry_Bench.png',
     recipes: [
       {
         components: [
@@ -182,7 +539,6 @@ export const Items : Item[] = [
   },
   {
     name: 'Electric Composter',
-    imageUrl: '/images/ITEM_Electric_Composter.png',
     recipes: [
       {
         components: [
@@ -213,7 +569,6 @@ export const Items : Item[] = [
   },
   {
     name : 'Iron Pickaxe',
-    imageUrl: '/images/ITEM_Iron_Pickaxe.png',
     recipes: [
       {
       components : [
@@ -235,7 +590,6 @@ export const Items : Item[] = [
   },
   {
       name: 'Iron Ingot',
-      imageUrl: '/images/ITEM_Iron_Ingot.png',
       recipes: [
         {
           components: [
@@ -249,42 +603,34 @@ export const Items : Item[] = [
     },
     {
       name: 'Iron Ore',
-      imageUrl: '/images/ITEM_Iron_Ore.png',
       collectable: true
     },
     {
       name: 'Oxite',
-      imageUrl: '/images/ITEM_Oxite.png',
       collectable: true
     },
     {
       name: 'Aluminium Ore',
-      imageUrl: '/images/ITEM_Aluminium_Ore.png',
       collectable: true
     },
     {
       name: 'Gold Ore',
-      imageUrl: '/images/ITEM_Gold_Ore.png',
       collectable: true
     },
     {
       name: 'Stone',
-      imageUrl: '/images/ITEM_Stone.png',
       collectable: true
     },
     {
       name: 'Silica',
-      imageUrl: '/images/ITEM_Silica.png',
       collectable: true
     },
     {
       name: 'Copper Ore',
-      imageUrl: '/images/ITEM_Copper_Ore.png',
       collectable: true
     },
     {
       name: 'Steel Ingot',
-      imageUrl: '/images/ITEM_Steel_Ingot.png',
       recipes: [
         {
           components: [
@@ -299,7 +645,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Steel Screw',
-      imageUrl: '/images/ITEM_Steel_Screw.png',
       recipes: [
         {
           components: [
@@ -314,7 +659,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Refined Gold',
-      imageUrl: '/images/ITEM_Refined_Gold.png',
       recipes: [
         {
           components: [
@@ -328,7 +672,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Aluminium Ingot',
-      imageUrl: '/images/ITEM_Aluminium_Ingot.png',
       recipes: [
         {
           components: [
@@ -342,7 +685,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Copper Ingot',
-      imageUrl: '/images/ITEM_Copper_Ingot.png',
       recipes: [
         {
           components: [
@@ -356,7 +698,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Electronics',
-      imageUrl: '/images/ITEM_Electronics.png',
       recipes: [
         {
           components: [
@@ -382,7 +723,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Organic Resin',
-      imageUrl: '/images/ITEM_Organic_Resin.png',
       recipes: [
         {
           components: [
@@ -400,7 +740,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Carbon Fiber',
-      imageUrl: '/images/ITEM_Carbon_Fiber.png',
       recipes: [
         {
           components: [
@@ -414,17 +753,14 @@ export const Items : Item[] = [
     },
     {
       name: 'Coal',
-      imageUrl: '/images/ITEM_Coal.png',
       collectable: true
     },
     {
       name: 'Wood',
-      imageUrl: '/images/ITEM_Wood.png',
       collectable: true
     },
     {
       name: 'Steel Bloom',
-      imageUrl: '/images/ITEM_Steel_Bloom.png',
       recipes: [
         {
           components: [
@@ -453,17 +789,14 @@ export const Items : Item[] = [
     },
     {
       name: 'Leather',
-      imageUrl: '/images/ITEM_Leather.png',
       collectable: true
     },
     {
       name: 'Wood',
-      imageUrl: '/images/ITEM_Wood.png',
       collectable: true
     },
     {
       name: 'Epoxy',
-      imageUrl: '/images/ITEM_Epoxy.png',
       recipes: [
         {
           components: [
@@ -489,7 +822,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Crushed Bone',
-      imageUrl: '/images/ITEM_Crushed_Bone.png',
       recipes: [
         {
           components: [
@@ -503,17 +835,14 @@ export const Items : Item[] = [
     },
     {
       name: 'Bone',
-      imageUrl: '/images/ITEM_Bone.png',
       collectable: true
     },
     {
       name: 'Sulfur',
-      imageUrl: '/images/ITEM_Sulfur.png',
       collectable: true
     },
     {
       name: 'Tree Sap',
-      imageUrl: '/images/ITEM_Tree_Sap.png',
       recipes: [
         {
           components: [
@@ -527,7 +856,6 @@ export const Items : Item[] = [
     },
     {
       name: 'Stick',
-      imageUrl: '/images/ITEM_Stick.png',
       collectable: true,
       recipes: [
         {
@@ -542,7 +870,6 @@ export const Items : Item[] = [
     },
     {
       name : 'Fabricator',
-      imageUrl: '/images/ITEM_Fabricator.png',
       recipes: [
         {
           components : [
@@ -576,7 +903,6 @@ export const Items : Item[] = [
     },
     {
       name : 'Carbon Paste',
-      imageUrl: '/images/ITEM_Carbon_Paste.png',
       recipes: [
         {
           components : [
@@ -602,7 +928,6 @@ export const Items : Item[] = [
     },
     {
       name : 'Composite Paste',
-      imageUrl: '/images/ITEM_Composite_Paste.png',
       recipes: [
         {
           components : [
@@ -628,7 +953,6 @@ export const Items : Item[] = [
     },
     {
       name : 'Concrete Mix',
-      imageUrl: '/images/ITEM_Concrete_Mix.png',
       recipes: [
         {
           components : [
