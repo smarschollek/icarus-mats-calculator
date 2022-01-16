@@ -1,30 +1,239 @@
 import { Item } from "../types/Item";
 
 export const Items : Item[] = [
-    {
-      name : 'Iron Pickaxe',
-      imageUrl: '/images/ITEM_Iron_Pickaxe.png',
-      recipes: [
-        {
+  {
+    name : 'Directional Worklamp',
+    imageUrl: '/images/ITEM_Directional_Worklamp.png',
+    recipes: [
+      {
         components : [
           { 
+            amount: 10,
+            itemName: 'Aluminium Ingot'
+          },
+          { 
             amount: 5,
-            itemName: 'Wood'
+            itemName: 'Glass'
           },
           { 
-            amount: 4,
-            itemName: 'Leather'
+            amount: 5,
+            itemName: 'Composites'
           },
           { 
-            amount: 6,
-            itemName: 'Iron Ingot'
+            amount: 2,
+            itemName: 'Electronics'
           },
         ]
-        }
+      }
+    ]
+  },
+  {
+    name: 'Glass',
+    imageUrl: '/images/ITEM_Glass.png',
+    recipes: [
+      {
+        components: [
+          {
+            amount: 1,
+            itemName: 'Silica'
+          }
+        ]
+      }
+
+    ]
+  },
+  {
+    name: 'Composites',
+    imageUrl: '/images/ITEM_Composites.png',
+    recipes: [
+      {
+        components: [
+          {
+            amount: 1,
+            itemName: 'Composite Paste'
+          }
+        ]
+      }
+
+    ]
+  },
+  {
+    name: 'Electric Carpentry Bench',
+    imageUrl: '/images/ITEM_Electric_Carpentry_Bench.png',
+    recipes: [
+      {
+        components: [
+          {
+            amount: 60,
+            itemName: 'Steel Ingot'
+          },
+          {
+            amount: 6,
+            itemName: 'Composites'
+          },
+          {
+            amount: 40,
+            itemName: 'Iron Ingot'
+          },
+          {
+            amount: 10,
+            itemName: 'Steel Screw'
+          },
+          {
+            amount: 8,
+            itemName: 'Electronics'
+          },
+        ]
+      }
+
+    ]
+  },
+  {
+    name: 'Electric Dehumidifier',
+    imageUrl: '/images/ITEM_Electric_Dehumidifier.png',
+    recipes: [
+      {
+        components: [
+          {
+            amount: 20,
+            itemName: 'Aluminium Ingot'
+          },
+          {
+            amount: 15,
+            itemName: 'Glass'
+          },
+          {
+            amount: 20,
+            itemName: 'Composites'
+          },
+          {
+            amount: 12,
+            itemName: 'Steel Screw'
+          },
+          {
+            amount: 35,
+            itemName: 'Electronics'
+          },
+        ]
+      }
+
+    ]
+  },
+  {
+    name: 'Electric Furnace',
+    imageUrl: '/images/ITEM_Electric_Furnace.png',
+    recipes: [
+      {
+        components: [
+          {
+            amount: 30,
+            itemName: 'Steel Ingot'
+          },
+          {
+            amount: 4,
+            itemName: 'Glass'
+          },
+          {
+            amount: 60,
+            itemName: 'Electronics'
+          },
+          {
+            amount: 80,
+            itemName: 'Concrete Mix'
+          },
+          {
+            amount: 8,
+            itemName: 'Steel Screw'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Electric Masonry Bench',
+    imageUrl: '/images/ITEM_Electric_Masonry_Bench.png',
+    recipes: [
+      {
+        components: [
+          {
+            amount: 60,
+            itemName: 'Steel Ingot'
+          },
+          {
+            amount: 6,
+            itemName: 'Glass'
+          },
+          {
+            amount: 100,
+            itemName: 'Concrete Mix'
+          },
+          {
+            amount: 10,
+            itemName: 'Steel Screw'
+          },
+          {
+            amount: 8,
+            itemName: 'Electronics'
+          },
+        ]
+      }
+
+    ]
+  },
+  {
+    name: 'Electric Composter',
+    imageUrl: '/images/ITEM_Electric_Composter.png',
+    recipes: [
+      {
+        components: [
+          {
+            amount: 20,
+            itemName: 'Composites'
+          },
+          {
+            amount: 60,
+            itemName: 'Steel Ingot'
+          },
+          {
+            amount: 10,
+            itemName: 'Electronics'
+          },
+          {
+            amount: 100,
+            itemName: 'Concrete Mix'
+          },
+          {
+            amount: 20,
+            itemName: 'Steel Screw'
+          },
+        ]
+      }
+
+    ]
+  },
+  {
+    name : 'Iron Pickaxe',
+    imageUrl: '/images/ITEM_Iron_Pickaxe.png',
+    recipes: [
+      {
+      components : [
+        { 
+          amount: 5,
+          itemName: 'Wood'
+        },
+        { 
+          amount: 4,
+          itemName: 'Leather'
+        },
+        { 
+          amount: 6,
+          itemName: 'Iron Ingot'
+        },
       ]
-      
-    },
-    {
+      }
+    ]
+  },
+  {
       name: 'Iron Ingot',
       imageUrl: '/images/ITEM_Iron_Ingot.png',
       recipes: [
@@ -386,6 +595,32 @@ export const Items : Item[] = [
             { 
               amount: 2,
               itemName: 'Epoxy'
+            },
+          ]
+        }
+      ]
+    },
+    {
+      name : 'Composite Paste',
+      imageUrl: '/images/ITEM_Composite_Paste.png',
+      recipes: [
+        {
+          components : [
+            { 
+              amount: 2,
+              itemName: 'Iron Ore'
+            },
+            { 
+              amount: 1,
+              itemName: 'Silica'
+            },
+            { 
+              amount: 1,
+              itemName: 'Organic Resin'
+            },
+            { 
+              amount: 1,
+              itemName: 'Gold Ore'
             },
           ]
         }
