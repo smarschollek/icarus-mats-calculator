@@ -44,7 +44,7 @@ const ComponentBox = styled.div`
 `
 
 type Props = {
-    selectedItem?: Item
+    selectedItem: Item
 }
 
 const RighContainer = (props: Props) => {
@@ -53,16 +53,10 @@ const RighContainer = (props: Props) => {
     const [onlyBaseComponents, setOnlyBaseComponents] = useState(false)
 
     useEffect(() => {
+        setAmount(1)
         setSelectedRecipe(0)
+        setOnlyBaseComponents(false)
     }, [props.selectedItem])
-
-    if(!props.selectedItem) {
-        return (
-            <Container>
-                placerholder
-            </Container>
-        )
-    }
 
     const renderRecipeSelection = () => {
         if(props.selectedItem) {
@@ -85,24 +79,24 @@ const RighContainer = (props: Props) => {
 
     const renderComponents = (components: Component[], wantedAmount: number) : JSX.Element[] => {
         return components.map((component, index) : JSX.Element => {
-            const item = Items.find(x => x.name === component.itemName)
+            const foundItem = Items.find(x => x.name === component.itemName)
 
-            if(item) {
+            if(foundItem) {
 
                 const renderComponent = () => {
                     if(onlyBaseComponents) {
-                        if(item.recipes && item.recipes[0].components.length === 0) {
-                            return <ListItem key={index} item={item} amount={component.amount * wantedAmount}/>    
+                        if(foundItem.collectable) {
+                            return <ListItem key={index} item={foundItem} amount={component.amount * wantedAmount}/>    
                         }
                     } else {
-                        return <ListItem key={index} item={item} amount={component.amount * wantedAmount}/>
+                        return <ListItem key={index} item={foundItem} amount={component.amount * wantedAmount}/>
                     }
                 }
 
                 return (
                     <>
                         {renderComponent()}
-                        {item.recipes && renderComponents(item.recipes[0].components, component.amount * wantedAmount)}
+                        {foundItem.recipes && renderComponents(foundItem.recipes[0].components, component.amount * wantedAmount)}
                     </>
 
                 )    
@@ -111,6 +105,12 @@ const RighContainer = (props: Props) => {
             }
             
         })
+    }
+
+    if(props.selectedItem.recipes === undefined || props.selectedItem.recipes.length <= selectedRecipe) {
+        return (
+            <>xxx</>
+        )
     }
 
     return(
@@ -147,7 +147,7 @@ const RighContainer = (props: Props) => {
             <ComponentBox>
 
             </ComponentBox>
-             {props.selectedItem.recipes && renderComponents(props.selectedItem.recipes[selectedRecipe].components, amount)}
+             {renderComponents(props.selectedItem.recipes[selectedRecipe].components, amount)}
          </Container>
     )
 }

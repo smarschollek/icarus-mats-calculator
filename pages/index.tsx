@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import LeftContainer from '../components/LeftContianer'
 import RightContainer from '../components/RightContainer'
@@ -16,7 +16,7 @@ const Container = styled.div`
 `
 
 const Home: NextPage = () => {  
-  const [selectedItem, setSelectedItem] = useState<Item | undefined>(undefined)
+  const [selectedItem, setSelectedItem] = useState<Item>(Items[0])
 
   return (
     <Container>
