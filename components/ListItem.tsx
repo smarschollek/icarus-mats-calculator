@@ -52,7 +52,7 @@ const ListItem = (props: Props) => {
                         <div>{props.amount.toFixed(2)}x</div>
                     )
                 }
-                <Image src={props.item.imageUrl} alt={props.item.name + 'image'} width={40} height={40}/>
+                <Image src={"/images/ITEM_" + props.item.name.split(' ').join('_') + ".png" } alt={props.item.name + ' image'} width={40} height={40}/>
                 <div>
                     {props.item.name}
                 </div>

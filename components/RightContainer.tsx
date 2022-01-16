@@ -151,7 +151,7 @@ const RighContainer = (props: Props) => {
     return(
          <Container>
              <Header>
-                <Image width={100} height={100} src={props.selectedItem.imageUrl} alt={`${props.selectedItem.name} image`}/>
+                <Image width={100} height={100} src={"/images/ITEM_" + props.selectedItem.name.split(' ').join('_') + ".png" } alt={`${props.selectedItem.name} image`}/>
                 <div>{props.selectedItem.name}</div>
              </Header>
              <Divider/>
