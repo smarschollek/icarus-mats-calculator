@@ -1,4 +1,4 @@
-import { Component } from "./Component";
+import { Recipe } from "./Recipe";
 
 export type Item = {
   name: string;
@@ -7,6 +7,6 @@ export type Item = {
   collectable?: boolean
 };
 
-export type Recipe = {
-  components: Component[]
+export type InteractiveItem = Item & {
+  useRecipe: boolean
 }

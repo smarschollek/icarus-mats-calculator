@@ -4,11 +4,21 @@ import { Form, FormControl, Stack } from 'react-bootstrap'
 import styled from 'styled-components'
 import { Items } from '../data/items'
 import { Component } from '../types/Component'
+import { InteractiveItem } from '../types/InteractiveItem'
 import { Item } from '../types/Item'
 import { Divider } from './Divider'
 import ListItem from './ListItem'
 
+const CenterContainer = styled.div`
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border-right: 1px solid #c8c9ca;
 
+    div {
+        font-size: 25px;
+    }
+`
 
 const Container = styled.div`
   height: 100%;
@@ -39,8 +49,9 @@ const ControlsBox = styled(Stack)`
     }
 `
 
-const ComponentBox = styled.div`
-
+const RecipeSelectionBox = styled.div`
+    width: 100%;
+    display: flex;
 `
 
 type Props = {
@@ -51,23 +62,25 @@ const RighContainer = (props: Props) => {
     const [amount, setAmount] = useState(1)
     const [selectedRecipe, setSelectedRecipe] = useState(0)
     const [onlyBaseComponents, setOnlyBaseComponents] = useState(false)
+    const [interactions, setInterActions] = useState<{[name: string]: boolean}>({})
 
     useEffect(() => {
         setAmount(1)
         setSelectedRecipe(0)
         setOnlyBaseComponents(false)
+        setInterActions({})
     }, [props.selectedItem])
 
     const renderRecipeSelection = () => {
         if(props.selectedItem) {
             if(props.selectedItem.recipes && props.selectedItem.recipes.length > 1) {
-                return props.selectedItem.recipes.map((item, index) => {
+                return props.selectedItem.recipes.map((_, index) => {
                     return (
                         <Form.Check
                             key={index}
                             checked={index === selectedRecipe}
-                            onClick={() => setSelectedRecipe(index)}
-                            label={`Recipe ${index}`}
+                            onChange={() => setSelectedRecipe(index)}
+                            label={`Recipe ${index+1}`}
                         />
                     )
                 })
@@ -77,26 +90,46 @@ const RighContainer = (props: Props) => {
         }
     }
 
+    const handleUseRecipeClicked = (itemName: string, active: boolean) => {
+        setInterActions(lastState => {
+            const newState = {...lastState}
+            interactions[itemName] = active
+            return newState
+        })
+    }
+
     const renderComponents = (components: Component[], wantedAmount: number) : JSX.Element[] => {
         return components.map((component, index) : JSX.Element => {
             const foundItem = Items.find(x => x.name === component.itemName)
 
             if(foundItem) {
-
                 const renderComponent = () => {
                     if(onlyBaseComponents) {
-                        if(foundItem.collectable) {
-                            return <ListItem key={index} item={foundItem} amount={component.amount * wantedAmount}/>    
+                        if(foundItem.collectable && !interactions[foundItem.name]) {
+                            return <ListItem 
+                                        key={index} 
+                                        item={foundItem} 
+                                        amount={component.amount * wantedAmount}
+                                        onUseRecipeClicked={handleUseRecipeClicked}
+                                        usingRecipe={interactions[foundItem.name]}
+                                    />    
                         }
                     } else {
-                        return <ListItem key={index} item={foundItem} amount={component.amount * wantedAmount}/>
+                        return <ListItem 
+                                    key={index} 
+                                    item={foundItem} 
+                                    amount={component.amount * wantedAmount}
+                                    onUseRecipeClicked={handleUseRecipeClicked}
+                                    usingRecipe={interactions[foundItem.name]}
+                                />
                     }
                 }
 
                 return (
                     <>
                         {renderComponent()}
-                        {foundItem.recipes && renderComponents(foundItem.recipes[0].components, component.amount * wantedAmount)}
+                        {!foundItem.collectable && foundItem.recipes && renderComponents(foundItem.recipes[0].components, component.amount * wantedAmount)}
+                        {foundItem.collectable && foundItem.recipes && interactions[foundItem.name] && renderComponents(foundItem.recipes[0].components, component.amount * wantedAmount)}
                     </>
 
                 )    
@@ -109,7 +142,9 @@ const RighContainer = (props: Props) => {
 
     if(props.selectedItem.recipes === undefined || props.selectedItem.recipes.length <= selectedRecipe) {
         return (
-            <>xxx</>
+            <CenterContainer>
+                <div>Collectable in the wild</div>
+            </CenterContainer>
         )
     }
 
@@ -139,14 +174,13 @@ const RighContainer = (props: Props) => {
                 />
                 <Form.Check
                     checked={onlyBaseComponents}
-                    onClick={() => setOnlyBaseComponents(!onlyBaseComponents)}
+                    onChange={() => setOnlyBaseComponents(!onlyBaseComponents)}
                     label={'only show base components'}
                 />
-                {renderRecipeSelection()}
+                <RecipeSelectionBox>
+                    {renderRecipeSelection()}
+                </RecipeSelectionBox>
              </ControlsBox>
-            <ComponentBox>
-
-            </ComponentBox>
              {renderComponents(props.selectedItem.recipes[selectedRecipe].components, amount)}
          </Container>
     )
