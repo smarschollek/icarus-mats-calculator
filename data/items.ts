@@ -228,6 +228,17 @@ export const Items : Item[] = [
               itemName: 'Coal'
             },
           ]
+        } , {
+          components: [
+            {
+              amount: 3,
+              itemName: 'Iron Ingot'
+            },
+            {
+              amount: 1,
+              itemName: 'Coal'
+            },
+          ]
         }
       ]
     },
