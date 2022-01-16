@@ -211,11 +211,6 @@ export const Items : Item[] = [
       }
     ]
   },
-
-
-
-
-
   {
     name : 'Fur Arms Armor',
     recipes: [
@@ -325,6 +320,224 @@ export const Items : Item[] = [
 
 
 
+  {
+    name : 'Ghillie Arms Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 120,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 4,
+            itemName: 'Stick'
+          },
+          { 
+            amount: 2,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Ghillie Chest Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 160,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 8,
+            itemName: 'Stick'
+          },
+          { 
+            amount: 6,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Ghillie Feet Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 80,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 6,
+            itemName: 'Stick'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Ghillie Head Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 120,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 2,
+            itemName: 'Stick'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Ghillie Legs Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 160,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 8,
+            itemName: 'Stick'
+          },
+          { 
+            amount: 6,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Hunter Chest Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 160,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 20,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 6,
+            itemName: 'Rope'
+          },
+          { 
+            amount: 16,
+            itemName: 'Epoxy'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Hunter Feet Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 80,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 12,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+          { 
+            amount: 4,
+            itemName: 'Epoxy'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Hunter Head Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 120,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+          { 
+            amount: 8,
+            itemName: 'Epoxy'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Hunter Legs Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 160,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 20,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 6,
+            itemName: 'Rope'
+          },
+          { 
+            amount: 8,
+            itemName: 'Epoxy'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Hunter Arms Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 40,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 8,
+            itemName: 'Leather'
+          },
+        ]
+      }
+    ]
+  },
 
 
 
@@ -332,6 +545,209 @@ export const Items : Item[] = [
 
 
 
+
+
+  {
+    name : 'Leather Chest Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 6,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 24,
+            itemName: 'Leather'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Leather Feet Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 4,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 12,
+            itemName: 'Leather'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Leather Head Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 8,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 12,
+            itemName: 'Leather'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Leather Legs Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 60,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 18,
+            itemName: 'Leather'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Leather Arms Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 40,
+            itemName: 'Fiber'
+          },
+          { 
+            amount: 8,
+            itemName: 'Leather'
+          },
+        ]
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    name : 'Polar Bear Arms Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 6,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 8,
+            itemName: 'Polar Bear Pelt'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Polar Bear Chest Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 10,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 20,
+            itemName: 'Polar Bear Pelt'
+          },
+          { 
+            amount: 6,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Polar Bear Feet Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 6,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 14,
+            itemName: 'Polar Bear Pelt'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Polar Bear Head Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 6,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 15,
+            itemName: 'Polar Bear Pelt'
+          },
+          { 
+            amount: 4,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    name : 'Polar Bear Legs Armor',
+    recipes: [
+      {
+        components : [
+          { 
+            amount: 8,
+            itemName: 'Leather'
+          },
+          { 
+            amount: 18,
+            itemName: 'Polar Bear Pelt'
+          },
+          { 
+            amount: 8,
+            itemName: 'Rope'
+          },
+        ]
+      }
+    ]
+  },
   {
     name : 'Rope',
     recipes: [
@@ -356,6 +772,10 @@ export const Items : Item[] = [
 
   {
     name : 'Fur',
+    collectable: true
+  },
+  {
+    name : 'Polar Bear Pelt',
     collectable: true
   },
   {
