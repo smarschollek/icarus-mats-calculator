@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Form, FormControl, Stack } from 'react-bootstrap'
 import styled from 'styled-components'
 import { Items } from '../data/items'
@@ -49,7 +49,12 @@ type Props = {
 
 const RighContainer = (props: Props) => {
     const [amount, setAmount] = useState(1)
+    const [selectedRecipe, setSelectedRecipe] = useState(0)
     const [onlyBaseComponents, setOnlyBaseComponents] = useState(false)
+
+    useEffect(() => {
+        setSelectedRecipe(0)
+    }, [props.selectedItem])
 
     if(!props.selectedItem) {
         return (
@@ -57,6 +62,25 @@ const RighContainer = (props: Props) => {
                 placerholder
             </Container>
         )
+    }
+
+    const renderRecipeSelection = () => {
+        if(props.selectedItem) {
+            if(props.selectedItem.recipes && props.selectedItem.recipes.length > 1) {
+                return props.selectedItem.recipes.map((item, index) => {
+                    return (
+                        <Form.Check
+                            key={index}
+                            checked={index === selectedRecipe}
+                            onClick={() => setSelectedRecipe(index)}
+                            label={`Recipe ${index}`}
+                        />
+                    )
+                })
+            } else {
+
+            }
+        }
     }
 
     const renderComponents = (components: Component[], wantedAmount: number) : JSX.Element[] => {
@@ -67,7 +91,7 @@ const RighContainer = (props: Props) => {
 
                 const renderComponent = () => {
                     if(onlyBaseComponents) {
-                        if(item.components.length === 0) {
+                        if(item.recipes && item.recipes[0].components.length === 0) {
                             return <ListItem key={index} item={item} amount={component.amount * wantedAmount}/>    
                         }
                     } else {
@@ -78,7 +102,7 @@ const RighContainer = (props: Props) => {
                 return (
                     <>
                         {renderComponent()}
-                        {renderComponents(item.components, component.amount * wantedAmount)}
+                        {item.recipes && renderComponents(item.recipes[0].components, component.amount * wantedAmount)}
                     </>
 
                 )    
@@ -118,11 +142,12 @@ const RighContainer = (props: Props) => {
                     onClick={() => setOnlyBaseComponents(!onlyBaseComponents)}
                     label={'only show base components'}
                 />
+                {renderRecipeSelection()}
              </ControlsBox>
             <ComponentBox>
 
             </ComponentBox>
-             {renderComponents(props.selectedItem.components, amount)}
+             {props.selectedItem.recipes && renderComponents(props.selectedItem.recipes[selectedRecipe].components, amount)}
          </Container>
     )
 }

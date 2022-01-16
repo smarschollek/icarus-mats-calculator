@@ -39,7 +39,7 @@ const ListItem = (props: Props) => {
             <Wrapper onClick={props.onClick}>
                 {
                     props.amount && (
-                        <div>{props.amount}x</div>
+                        <div>{Math.round(props.amount)}x</div>
                     )
                 }
                 <Image src={props.item.imageUrl} alt={props.item.name + 'image'} width={40} height={40}/>
