@@ -88,7 +88,6 @@ export const Items : Item[] = [
   
       ]
     },
-
     {
       name: 'Steel Screw',
       imageUrl: '/images/ITEM_Steel_Screw.png',
@@ -104,20 +103,19 @@ export const Items : Item[] = [
   
       ]
     },
-
-
-
     {
       name: 'Refined Gold',
       imageUrl: '/images/ITEM_Refined_Gold.png',
       recipes: [
         {
           components: [
-        {
-        amount: 2,
-        itemName: 'Gold Ore'
-        },
-      ]}]
+            {
+              amount: 2,
+              itemName: 'Gold Ore'
+            },
+          ]
+        }
+      ]
     },
     {
       name: 'Aluminium Ingot',
@@ -125,90 +123,86 @@ export const Items : Item[] = [
       recipes: [
         {
           components: [
-        {
-        amount: 1,
-        itemName: 'Aluminium Ore'
-        },
-      ]}]
+            {
+            amount: 1,
+            itemName: 'Aluminium Ore'
+            },
+          ]
+        }
+      ]
     },
-
     {
       name: 'Copper Ingot',
       imageUrl: '/images/ITEM_Copper_Ingot.png',
       recipes: [
         {
           components: [
-        {
-        amount: 1,
-        itemName: 'Copper Ore'
-        },
-      ]}]
+            {
+            amount: 1,
+            itemName: 'Copper Ore'
+            },
+          ]
+        }
+      ]
     },
-
     {
       name: 'Electronics',
       imageUrl: '/images/ITEM_Electronics.png',
       recipes: [
         {
           components: [
-        {
-          amount: 1,
-          itemName: 'Refined Gold'
-        },
-        {
-          amount: 1,
-          itemName: 'Copper Ingot'
-        },
-        {
-          amount: 1,
-          itemName: 'Organic Resin'
-        },
-        {
-          amount: 1,
-          itemName: 'Epoxy'
-        },
-
-        ]}]
+            {
+              amount: 1,
+              itemName: 'Refined Gold'
+            },
+            {
+              amount: 1,
+              itemName: 'Copper Ingot'
+            },
+            {
+              amount: 1,
+              itemName: 'Organic Resin'
+            },
+            {
+              amount: 1,
+              itemName: 'Epoxy'
+            },
+          ]
+        }
+      ]
     },
-
     {
       name: 'Organic Resin',
       imageUrl: '/images/ITEM_Organic_Resin.png',
       recipes: [
         {
           components: [
-        {
-          amount: 1,
-          itemName: 'Wood'
-        },
-        {
-          amount: 1,
-          itemName: 'Oxite'
-        },
-      ]}]
+            {
+              amount: 1,
+              itemName: 'Wood'
+            },
+            {
+              amount: 1,
+              itemName: 'Oxite'
+            },
+          ]
+        }
+      ]
     },
-
-
-
-
-
-
-
     {
       name: 'Carbon Fiber',
       imageUrl: '/images/ITEM_Carbon_Fiber.png',
       recipes: [
         {
           components: [
-        {
-          amount: 1,
-          itemName: 'Carbon Paste'
+            {
+              amount: 1,
+              itemName: 'Carbon Paste'
+            }
+          ]
         }
       ]
-    }
-      ]
     },
-
     {
       name: 'Coal',
       imageUrl: '/images/ITEM_Coal.png',
@@ -225,19 +219,18 @@ export const Items : Item[] = [
       recipes: [
         {
           components: [
-          {
-            amount: 6,
-            itemName: 'Iron Ore'
-          },
-          {
-            amount: 1,
-            itemName: 'Coal'
-          },
-        ]
-      }
-    ]
-      },
-
+            {
+              amount: 6,
+              itemName: 'Iron Ore'
+            },
+            {
+              amount: 1,
+              itemName: 'Coal'
+            },
+          ]
+        }
+      ]
+    },
     {
       name: 'Leather',
       imageUrl: '/images/ITEM_Leather.png',
@@ -332,86 +325,81 @@ export const Items : Item[] = [
       imageUrl: '/images/ITEM_Fabricator.png',
       recipes: [
         {
-        components : [
-          { 
-            amount: 8,
-            itemName: 'Steel Ingot'
-          },
-          { 
-            amount: 40,
-            itemName: 'Aluminium Ingot'
-          },
-          { 
-            amount: 60,
-            itemName: 'Electronics'
-          },
-          { 
-            amount: 30,
-            itemName: 'Steel Screw'
-          },
-          { 
-            amount: 30,
-            itemName: 'Concrete Mix'
-          },
-          { 
-            amount: 8,
-            itemName: 'Carbon Fiber'
-          },
-        ]
-      }
-
+          components : [
+            { 
+              amount: 8,
+              itemName: 'Steel Ingot'
+            },
+            { 
+              amount: 40,
+              itemName: 'Aluminium Ingot'
+            },
+            { 
+              amount: 60,
+              itemName: 'Electronics'
+            },
+            { 
+              amount: 30,
+              itemName: 'Steel Screw'
+            },
+            { 
+              amount: 30,
+              itemName: 'Concrete Mix'
+            },
+            { 
+              amount: 8,
+              itemName: 'Carbon Fiber'
+            },
+          ]
+        }
       ]
-
     },
-
     {
       name : 'Carbon Paste',
       imageUrl: '/images/ITEM_Carbon_Paste.png',
       recipes: [
         {
-        components : [
-        { 
-          amount: 1,
-          itemName: 'Silica'
-        },
-        { 
-          amount: 1,
-          itemName: 'Aluminium Ingot'
-        },
-        { 
-          amount: 4,
-          itemName: 'Organic Resin'
-        },
-        { 
-          amount: 2,
-          itemName: 'Epoxy'
-        },
+          components : [
+            { 
+              amount: 1,
+              itemName: 'Silica'
+            },
+            { 
+              amount: 1,
+              itemName: 'Aluminium Ingot'
+            },
+            { 
+              amount: 4,
+              itemName: 'Organic Resin'
+            },
+            { 
+              amount: 2,
+              itemName: 'Epoxy'
+            },
+          ]
+        }
       ]
-    }
-    ]
     },
-
     {
       name : 'Concrete Mix',
       imageUrl: '/images/ITEM_Concrete_Mix.png',
       recipes: [
         {
-        components : [
-        { 
-          amount: 1,
-          itemName: 'Tree Sap'
-        },
-        { 
-          amount: 8,
-          itemName: 'Stone'
-        },
-        { 
-          amount: 4,
-          itemName: 'Silica'
-        },
+          components : [
+            { 
+              amount: 1,
+              itemName: 'Tree Sap'
+            },
+            { 
+              amount: 8,
+              itemName: 'Stone'
+            },
+            { 
+              amount: 4,
+              itemName: 'Silica'
+            },
+          ]
+        }
       ]
-    }
-    ]
     },
-
   ]
