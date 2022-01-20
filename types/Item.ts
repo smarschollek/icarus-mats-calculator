@@ -6,6 +6,4 @@ export type Item = {
   collectable?: boolean
 };
 
-export type InteractiveItem = Item & {
-  useRecipe: boolean
-}
+
