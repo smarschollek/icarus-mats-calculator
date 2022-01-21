@@ -20,6 +20,10 @@ jobs:
         DOCKER_PASS: ${{secrets.DOCKER_PASS}}
       run: docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
+      env:
+        DOCKER_USER: ${{secrets.DOCKER_USER}}
       run: docker build . --file Dockerfile --tag $DOCKER_USER/icarus-calculator:$(date +%s)
     - name: Publish to DockerHub
+      env:
+        DOCKER_USER: ${{secrets.DOCKER_USER}}
       run: docker push $DOCKER_USER/icarus-calculator:$(date +%s)
