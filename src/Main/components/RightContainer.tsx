@@ -9,9 +9,9 @@ import ListItem from "./ListItem"
 
 const CenterContainer = styled.div`
     width: 100%;
+    height: 100%;
     display: grid;
     place-items: center;
-    border-right: 1px solid #c8c9ca;
 
     div {
         font-size: 25px;
@@ -146,16 +146,23 @@ const RighContainer = (props: Props) => {
 
     if(props.selectedItem.recipes === undefined || props.selectedItem.recipes.length <= selectedRecipe) {
         return (
-            <CenterContainer>
-                <div>Collectable in the wild</div>
-            </CenterContainer>
+            <Container>
+                <Header>
+                <img width={100} height={100} src={`${process.env.PUBLIC_URL}/images/ITEM_${props.selectedItem.name.split(' ').join('_')}.png`} alt={`${props.selectedItem.name}`}/>
+                    <div>{props.selectedItem.name}</div>
+                </Header>
+                <Divider/>
+                <CenterContainer>
+                    <div>Collectable in the wild</div>
+                </CenterContainer>
+            </Container>
         )
     }
 
     return(
          <Container>
              <Header>
-                <img width={100} height={100} src={"/images/ITEM_" + props.selectedItem.name.split(' ').join('_') + ".png" } alt={`${props.selectedItem.name}`}/>
+                <img width={100} height={100} src={`${process.env.PUBLIC_URL}/images/ITEM_${props.selectedItem.name.split(' ').join('_')}.png`} alt={`${props.selectedItem.name}`}/>
                 <div>{props.selectedItem.name}</div>
              </Header>
              <Divider/>

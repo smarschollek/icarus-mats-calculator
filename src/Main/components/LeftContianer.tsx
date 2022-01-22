@@ -66,7 +66,7 @@ const LeftContainer = (props: Props) => {
     return(
          <Container>
              <TopBar>
-                 <img src='/images/Icarus-Logo.png' height={45} width={138} alt='Icarus Logo'/>
+                 <img src={`${process.env.PUBLIC_URL}/images/Icarus-Logo.png`} height={45} width={138} alt='Icarus Logo'/>
                  <div>MATS CALCULATOR</div>
              </TopBar>
              <SearchBox>
