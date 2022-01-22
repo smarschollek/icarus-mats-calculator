@@ -1,9 +1,8 @@
-import { Item } from "../types/Item"
 import styled from 'styled-components'
-import Image from "next/image"
 import { MouseEventHandler, useState } from "react"
 import { Divider } from "./Divider"
-import { Form, ToggleButton } from "react-bootstrap"
+import { Form } from "react-bootstrap"
+import { Item } from '../../types/Item'
 
 const Wrapper = styled.div`
     width: 100%;
@@ -52,7 +51,7 @@ const ListItem = (props: Props) => {
                         <div>{props.amount.toFixed(2)}x</div>
                     )
                 }
-                <Image src={"/images/ITEM_" + props.item.name.split(' ').join('_') + ".png" } alt={props.item.name + ' image'} width={40} height={40}/>
+                <img src={"/images/ITEM_" + props.item.name.split(' ').join('_') + ".png" } alt={props.item.name} width={40} height={40}/>
                 <div>
                     {props.item.name}
                 </div>

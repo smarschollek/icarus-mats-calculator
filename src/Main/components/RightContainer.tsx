@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import { Form, FormControl, Stack } from 'react-bootstrap'
-import styled from 'styled-components'
-import { Items } from '../data/items'
-import { Component } from '../types/Component'
-import { InteractiveItem } from '../types/InteractiveItem'
-import { Item } from '../types/Item'
-import { Divider } from './Divider'
-import ListItem from './ListItem'
+import { useState, useEffect } from "react"
+import { Stack, Form, FormControl } from "react-bootstrap"
+import styled from "styled-components"
+import { Items } from "../../data/items"
+import { RecipeComponent } from "../../types/Component"
+import { Item } from "../../types/Item"
+import { Divider } from "./Divider"
+import ListItem from "./ListItem"
 
 const CenterContainer = styled.div`
     width: 100%;
@@ -24,6 +22,7 @@ const Container = styled.div`
   height: 100%;
   width: calc(100% - 420px);
   border-right: 1px solid #c8c9ca;
+  overflow: hidden;
 `
 
 const Header = styled.div`
@@ -41,7 +40,7 @@ const Header = styled.div`
 
 const ControlsBox = styled(Stack)`
     padding: 10px;
-
+    height: 260px;
     div {
         margin-left: auto;
         margin-right: auto;
@@ -52,6 +51,11 @@ const ControlsBox = styled(Stack)`
 const RecipeSelectionBox = styled.div`
     width: 100%;
     display: flex;
+`
+
+const ComponentsBox = styled.div`
+    overflow: auto;
+    height: calc(100% - 360px);
 `
 
 type Props = {
@@ -74,7 +78,7 @@ const RighContainer = (props: Props) => {
     const renderRecipeSelection = () => {
         if(props.selectedItem) {
             if(props.selectedItem.recipes && props.selectedItem.recipes.length > 1) {
-                return props.selectedItem.recipes.map((_, index) => {
+                return props.selectedItem.recipes.map((_, index : number) => {
                     return (
                         <Form.Check
                             key={index}
@@ -98,9 +102,9 @@ const RighContainer = (props: Props) => {
         })
     }
 
-    const renderComponents = (components: Component[], wantedAmount: number) : JSX.Element[] => {
+    const renderComponents = (components: RecipeComponent[], wantedAmount: number) : JSX.Element[] => {
         return components.map((component, index) : JSX.Element => {
-            const foundItem = Items.find(x => x.name === component.itemName)
+            const foundItem = Items.find((x : Item) => x.name === component.itemName)
 
             if(foundItem) {
                 const renderComponent = () => {
@@ -151,7 +155,7 @@ const RighContainer = (props: Props) => {
     return(
          <Container>
              <Header>
-                <Image width={100} height={100} src={"/images/ITEM_" + props.selectedItem.name.split(' ').join('_') + ".png" } alt={`${props.selectedItem.name} image`}/>
+                <img width={100} height={100} src={"/images/ITEM_" + props.selectedItem.name.split(' ').join('_') + ".png" } alt={`${props.selectedItem.name}`}/>
                 <div>{props.selectedItem.name}</div>
              </Header>
              <Divider/>
@@ -181,7 +185,9 @@ const RighContainer = (props: Props) => {
                     {renderRecipeSelection()}
                 </RecipeSelectionBox>
              </ControlsBox>
-             {renderComponents(props.selectedItem.recipes[selectedRecipe].components, amount)}
+             <ComponentsBox>
+                {renderComponents(props.selectedItem.recipes[selectedRecipe].components, amount)}
+             </ComponentsBox>
          </Container>
     )
 }

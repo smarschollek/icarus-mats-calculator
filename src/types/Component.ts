@@ -1,5 +1,5 @@
 
-export type Component = {
+export type RecipeComponent = {
   amount: number;
   itemName: string;
 };

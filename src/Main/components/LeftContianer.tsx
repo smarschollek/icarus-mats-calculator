@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import { useState } from 'react'
 import { FormControl } from 'react-bootstrap'
 import styled from 'styled-components'
+import { Item } from '../../types/Item'
 import { Divider } from './Divider'
-import { Item } from '../types/Item'
 import ListItem from './ListItem'
 
 const Container = styled.div`
@@ -67,7 +66,7 @@ const LeftContainer = (props: Props) => {
     return(
          <Container>
              <TopBar>
-                 <Image src='/images/Icarus-Logo.png' height={45} width={138} alt='Icarus Logo'/>
+                 <img src='/images/Icarus-Logo.png' height={45} width={138} alt='Icarus Logo'/>
                  <div>MATS CALCULATOR</div>
              </TopBar>
              <SearchBox>
