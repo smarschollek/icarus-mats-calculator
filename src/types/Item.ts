@@ -1,4 +1,4 @@
-import { Recipe } from "./Recipe";
+import { Recipe } from './Recipe';
 
 export type Item = {
   name: string;
