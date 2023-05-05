@@ -19,7 +19,7 @@ foreach ($data as $line) {
         $linepart = trim($linepart);
         //echo "linepart: $linepart\n\r";
         if($linepart == "") continue;
-        if(filter_var($linepart, FILTER_VALIDATE_INT)) {
+        if(filter_var($linepart, FILTER_VALIDATE_FLOAT)) {
             //echo "number found: $linepart\n\r";
             $foundNumber = true;
             $number = $linepart;
@@ -29,6 +29,7 @@ foreach ($data as $line) {
     if(!$foundNumber && trim($line) != "") {
         $receipeIndex = 0;
         $currentReceipe = trim($line);
+        $receipes[$currentReceipe] = Array();
         continue;
     }
 
@@ -52,9 +53,11 @@ export const Items : Item[] = [";
 foreach($receipes as $item => $receipe) {
     echo "
 	{
-		name: '$item',
+		name: '$item',";
+    if(count($receipe) > 0){
+        echo "
 		recipes: [";
-
+    }
     foreach($receipe as $components) {
         echo "
 			{
@@ -69,10 +72,13 @@ foreach($receipes as $item => $receipe) {
         }
         echo "
 				]
-			}";
+			},";
+    }
+    if(count($receipe) > 0){
+        echo "
+		]";
     }
     echo "
-		]
 	},";
 }
 
