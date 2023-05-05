@@ -1,0 +1,697 @@
+#Attachment Packs
+Aerodynamic Attachment
+    4 Iron Ingot
+    8 Copper Nail
+    4 Leather
+Attack Speed Attachment
+    4 Steel Ingot
+    3  Epoxy
+Basic Scope Attachment	
+    2  Steel Ingot
+    1  Glass
+Calibrated Grip Attachment	
+    4  Iron Ingot
+    8  Leather
+    2  Epoxy
+Carcass Harvesting Attachment	
+    6  Iron Ingot
+    4  Fur
+Copper Attachment	
+    4  Iron Ingot
+    8  Steel Screw
+Economic Attachment	
+    2  Steel Ingot
+    6  Refined Wood
+Flexible Frame Attachment	
+    6  Refined Wood
+    2  Epoxy
+Gold Attachment	
+    4  Platinum Ingot
+    8  Copper Nail
+Handcannon Attachment	
+    6  Steel Ingot
+    2  Epoxy
+Leather Attachment	
+    4  Iron Ingot
+    8  Fur
+Lightweight Frame Attachment	
+    2  Steel Ingot
+    6  Refined Wood
+    2  Rope
+Melee Damage Attachment	
+    4  Iron Ingot
+    6  Leather
+    6  Refined Wood
+Narrow Barrel Attachment	
+    2  Platinum Ingot
+    4  Epoxy
+    4  Leather
+Noise Suppression Attachment	
+    4  Steel Ingot
+    8  Leather
+    6  Fur
+Plating Attachment	
+    4  Platinum Ingot
+    4  Iron Ingot
+    8  Steel Screw
+    2  Epoxy
+Platinum Attachment	
+    4  Steel Ingot
+    8  Iron Nail
+Pockets Attachment	
+    4  Steel Ingot
+    8  Leather
+    4  Rope
+Prime Meat Attachment	
+    4  Steel Ingot
+    8  Fur
+    4  Epoxy
+Reaping Attachment	
+    2  Steel Ingot
+    10  Refined Wood
+Repair Speed Attachment	
+    2  Steel Ingot
+    4  Epoxy
+Rubberized Attachment	
+    2  Platinum Ingot
+    6  Leather
+    8  Steel Screw
+Silencer Attachment	
+    2  Steel Ingot
+    2  Epoxy
+    8  Fur
+Sniper Scope Attachment	
+    2  Titanium Ingot
+    1  Glass
+Storm Visor Attachment	
+    4  Platinum Ingot
+    10  Leather
+    2  Glass
+Strengthened Strings Attachment	
+    2  Steel Ingot
+    4  Rope
+    4  Refined Wood
+Supplemental Filtration Attachment	
+    4  Platinum Ingot
+    4  Epoxy
+    6  Glass
+Supplemental Respiration Attachment	
+    4  Copper Ingot
+    50  Charcoal
+Titanium Attachment	
+    4  Copper Ingot
+    8  Steel Screw
+Trajectory Module Attachment	
+    2  Steel Ingot
+    6  Refined Wood
+#Armors
+Cloth Arms Armor	
+80  Fiber
+Cloth Chest Armor	
+120  Fiber
+Cloth Feet Armor	
+40  Fiber
+Cloth Head Armor	
+80  Fiber
+Cloth Legs Armor	
+120  Fiber
+Composite Arms Armor	
+    2  Aluminium Ingot
+    8  Composites
+    6  Steel Screw
+    2  Carbon Fiber
+Composite Chest Armor	
+    6  Aluminium Ingot
+    24  Composites
+    12  Steel Screw
+    2  Carbon Fiber
+Composite Feet Armor	
+    4  Aluminium Ingot
+    12  Composites
+    6  Steel Screw
+    2  Carbon Fiber
+Composite Head Armor	
+    4  Aluminium Ingot
+    12  Composites
+    6  Steel Screw
+    2  Carbon Fiber
+Composite Legs Armor	
+    6  Aluminium Ingot
+    18  Composites
+    6  Steel Screw
+    2  Carbon Fiber
+Cured Leather Arms Armor	
+    7  Cured Leather
+    1  Platinum Weave
+Cured Leather Chest Armor	
+    13  Cured Leather
+    3  Platinum Weave
+Cured Leather Feet Armor	
+    4  Cured Leather
+    1  Platinum Weave
+Cured Leather Head Armor	
+    6  Cured Leather
+    1  Platinum Weave
+Cured Leather Leg Armor	
+    10  Cured Leather
+    2  Platinum Weave
+Fur Arms Armor	
+    4  Leather
+    8  Fur
+    1  Rope
+Fur Chest Armor	
+    8  Leather
+    24  Fur
+    4  Rope
+Fur Feet Armor	
+    6  Leather
+    12  Fur
+    2  Rope
+Fur Head Armor	
+    4  Leather
+    12  Fur
+    2  Rope
+Fur Legs Armor	
+    8  Leather
+    18  Fur
+    3  Rope
+Ghillie Arms Armor	
+    120  Fiber
+    4  Stick
+    1  Rope
+Ghillie Chest Armor	
+    160  Fiber
+    8  Stick
+    4  Rope
+Ghillie Feet Armor	
+    80  Fiber
+    6  Stick
+    2  Rope
+Ghillie Head Armor	
+    120  Fiber
+    2  Stick
+    2  Rope
+Ghillie Legs Armor	
+    160  Fiber
+    8  Stick
+    3  Rope
+Hunter Arms Armor	
+2 	 Platinum Weave
+4 	 Cured Leather
+4 	 Epoxy
+Hunter Chest Armor	
+5 	 Platinum Weave
+6 	 Cured Leather
+6 	 Rope
+16 	 Epoxy
+Hunter Feet Armor	
+1 	 Platinum Weave
+2 	 Cured Leather
+4 	 Rope
+4 	 Epoxy
+Hunter Head Armor	
+2 	 Platinum Weave
+3 	 Cured Leather
+4 	 Rope
+8 	 Epoxy
+Hunter Legs Armor	
+4 	 Platinum Weave
+4 	 Cured Leather
+6 	 Rope
+8 	 Epoxy
+Leather Arms Armor	
+    40  Fiber
+    8  Leather
+Leather Chest Armor	
+    60  Fiber
+    24  Leather
+Leather Feet Armor	
+    20  Fiber
+    12  Leather
+Leather Head Armor	
+    40  Fiber
+    12  Leather
+Leather Legs Armor	
+    60  Fiber
+    18  Leather
+Polar Bear Arms Armor	
+    3  Cured Leather
+    4  Polar Bear Pelt
+    8  Fur
+    2  Rope
+Polar Bear Chest Armor	
+    5  Cured Leather
+    8  Polar Bear Pelt
+    20  Fur
+    6  Rope
+Polar Bear Feet Armor	
+    3  Cured Leather
+    2  Polar Bear Pelt
+    8  Fur
+    2  Rope
+Polar Bear Head Armor	
+    3  Cured Leather
+    4  Polar Bear Pelt
+    10  Fur
+    4  Rope
+Polar Bear Legs Armor	
+    4  Cured Leather
+    6  Polar Bear Pelt
+    16  Fur
+    6  Rope
+Sandworm Arms Armor	
+ Fiber 	40
+ Leather 	4
+ Sandworm Scale 	6 
+Sandworm Chest Armor	
+ Fiber 	60
+ Leather 	12
+ Sandworm Scale 	20 
+Sandworm Feet Armor	
+ Fiber 	20
+ Leather 	6
+ Sandworm Scale 	6 
+Sandworm Head Armor	
+ Fiber 	40
+ Leather 	10
+ Sandworm Scale 	10 
+Sandworm Leg Armor	
+ Fiber 	60
+ Leather 	9
+ Sandworm Scale 	10 
+Scorpion Arms Armor	
+    40  Fiber
+    8  Leather
+    6  Scorpion Carapace
+Scorpion Chest Armor	
+    50  Fiber
+    18  Leather
+    20  Scorpion Carapace
+Scorpion Feet Armor	
+    35  Fiber
+    15  Leather
+    4  Scorpion Carapace
+Scorpion Head Armor	
+    40  Fiber
+    15  Leather
+    10  Scorpion Carapace
+Scorpion Legs Armor	
+    60  Fiber
+    12  Leather
+    10  Scorpion Carapace
+Wayfarer Arms Armor	
+4  Platinum Weave
+Wayfarer Chest Armor	
+10  Platinum Weave
+Wayfarer Feet Armor	
+2  Platinum Weave
+Wayfarer Head Armor	
+4  Platinum Weave
+Wayfarer Leg Armor	
+8  Platinum Weave
+#Building Pieces 
+Aluminium Beam	
+    2  Aluminium Ore
+    2  Wood
+    2  Steel Screw
+Aluminium Door	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Floor	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Floor Trapdoor	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Halfpieces	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Halfpitches	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Ladder	
+    2  Aluminium Ore
+    2  Wood
+    6  Steel Screw
+Aluminium Railing	
+    2  Aluminium Ore
+    2  Wood
+    6  Steel Screw
+Aluminium Ramp	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Roof	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Roof Corner	
+    2  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Stairs	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Trapdoor	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Wall	
+    4  Aluminium Ore
+    6  Wood
+    4  Steel Screw
+Aluminium Wall Angled	
+    4  Aluminium Ore
+    6  Wood
+    2  Steel Screw
+Aluminium Window	
+    2  Aluminium Ore
+    3  Wood
+    4  Steel Screw
+Concrete Beam	
+8 	 Steel Rebar
+2 	 Concrete Mix
+2 	 Steel Screw
+Concrete Floor	
+10 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Floor Trapdoor	
+10 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Frame	
+20 	 Steel Rebar
+8 	 Concrete Mix
+10 	 Steel Screw
+Concrete Halfpieces	
+10 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Halfpitches	
+10 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Railing	
+2 	 Aluminium Ore
+2 	 Wood
+6 	 Steel Screw
+Concrete Ramp	
+12 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Roof	
+12 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Roof Corner	
+8 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Stairs	
+12 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Wall	
+10 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Concrete Wall Angled	
+8 	 Steel Rebar
+4 	 Concrete Mix
+4 	 Steel Screw
+Glass Beam	
+6 	 Iron Ingot
+12 	 Epoxy
+Glass Door	
+6 	 Iron Ingot
+20 	 Glass
+12 	 Epoxy
+Glass Roof	
+6 	 Iron Ingot
+20 	 Glass
+12 	 Epoxy
+Glass Roof Corner	
+3 	 Iron Ingot
+10 	 Glass
+6 	 Epoxy
+Glass Wall	
+6 	 Iron Ingot
+20 	 Glass
+12 	 Epoxy
+Glass Wall Angled	
+3 	 Iron Ingot
+10 	 Glass
+6 	 Epoxy
+Glass Window	
+12 	 Wood
+18 	 Glass
+4 	 Epoxy
+Heavy Glass Window	
+12 	 Iron Ingot
+18 	 Glass
+4 	 Epoxy
+Heavy Trapdoor	
+    12  Iron Ingot
+    4  Steel Screw
+    4  Epoxy
+Interior Wood Beam	
+    6  Refined Wood
+    4  Copper Nail
+Interior Wood Door	
+    8  Rope
+    10  Refined Wood
+    6  Copper Nail
+Interior Wood Floor	
+    20  Refined Wood
+    4  Copper Nail
+Interior Wood Floor Trapdoor	
+    20  Refined Wood
+    4  Copper Nail
+Interior Wood Halfpieces	
+    20  Refined Wood
+    4  Copper Nail
+Interior Wood Halfpitches	
+    20  Refined Wood
+    4  Copper Nail
+Interior Wood Ladder	
+    10  Refined Wood
+    6  Copper Nail
+Interior Wood Railing	
+    8  Refined Wood
+    4  Copper Nail
+Interior Wood Ramp	
+    20  Refined Wood
+    4  Copper Nail
+Interior Wood Stairs	
+    20  Refined Wood
+    4  Copper Nail
+Interior Wood Trapdoor	
+    4  Rope
+    10  Refined Wood
+    2  Copper Nail
+Interior Wood Wall	
+    20  Refined Wood
+    4  Copper Nail
+Interior Wood Wall Angled	
+    10  Refined Wood
+    2  Copper Nail
+Reinforced Door	
+    4  Wood
+    6  Iron Ingot
+    8  Iron Nail
+    4  Rope
+Reinforced Ladder	
+    10  Wood
+    8  Iron Ingot
+    8  Iron Nail
+Reinforced Railing	
+    10  Wood
+    8  Iron Ingot
+    8  Iron Nail
+Reinforced Trapdoor	
+    4  Wood
+    2  Iron Ingot
+    4  Iron Nail
+    4  Rope
+Reinforced Window	
+    4  Wood
+    2  Iron Ingot
+    8  Iron Nail
+    4  Rope
+Stone Beam	
+    2  Wood
+    6  Stone
+    1  Leather
+    6  Iron Nail
+Stone Floor	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Floor Trapdoor	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Frame	
+    12  Wood
+    40  Stone
+    4  Leather
+    12  Iron Nail
+Stone Halfpieces	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Halfpitches	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Ramp	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Roof	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Roof Corner	
+    3  Wood
+    10  Stone
+    2  Leather
+    4  Iron Nail
+Stone Stairs	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Wall	
+    6  Wood
+    20  Stone
+    4  Leather
+    6  Iron Nail
+Stone Wall Angled	
+    3  Wood
+    10  Stone
+    2  Leather
+    4  Iron Nail
+Thatch Beam	
+    12  Fiber
+    6  Stick
+Thatch Door	
+    10  Fiber
+    4  Stick
+Thatch Floor	
+    20  Fiber
+    3  Stick
+Thatch Floor Trapdoor	
+    20  Fiber
+    3  Stick
+Thatch Halfpieces	
+    20  Fiber
+    3  Stick
+Thatch Halfpitches	
+    20  Fiber
+    3  Stick
+Thatch Ladder	
+    6  Fiber
+    10  Stick
+Thatch Railing	
+    8  Fiber
+    2  Stick
+Thatch Ramp	
+    20  Fiber
+    3  Stick
+Thatch Roof	
+    20  Fiber
+    3  Stick
+Thatch Roof Corner	
+    10  Fiber
+    2  Stick
+Thatch Stairs	
+    20  Fiber
+    3  Stick
+Thatch Trapdoor	
+    10  Fiber
+    4  Stick
+Thatch Wall	
+    20  Fiber
+    3  Stick
+Thatch Wall Angled	
+    10  Fiber
+    2  Stick
+Thatch Window	
+    10  Fiber
+    4  Stick
+Wood Beam	
+    4  Fiber
+    6  Wood
+Wood Door	
+    8  Fiber
+    10  Wood
+Wood Floor	
+    12  Fiber
+    20  Wood
+Wood Floor Trapdoor	
+    12  Fiber
+    20  Wood
+Wood Halfpieces	
+    12  Fiber
+    20  Wood
+Wood Halfpitches	
+    12  Fiber
+    20  Wood
+Wood Ladder	
+    6  Fiber
+    10  Wood
+Wood Railing	
+    8  Fiber
+    8  Wood
+Wood Ramp	
+    12  Fiber
+    20  Wood
+Wood Roof	
+    12  Fiber
+    20  Wood
+Wood Roof Corner	
+    6  Fiber
+    10  Wood
+Wood Stairs	
+    12  Fiber
+    20  Wood
+Wood Trapdoor	
+    4  Fiber
+    10  Wood
+Wood Wall	
+    12  Fiber
+    20  Wood
+Wood Wall Angled	
+    6  Fiber
+    10  Wood
+Wood Window	
+    8  Fiber
+    10  Wood
+#Consumables
+#Deployables 
+#Envirosuits 
+#Modules
+#Resources
+Electronics
+1 	 Refined Gold
+3 	 Copper Ingot
+2 	 Organic Resin
+2 	 Epoxy
+#Tools
+#Weapons
+
+
