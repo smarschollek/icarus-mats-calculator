@@ -1,0 +1,6 @@
+Format:
+# = comment, ignored
+Some text = Item name
+[number] some text OR
+some text [number] = component for receipe
+EMPTY LINE = another receipe for previous item (see steel bloom)
