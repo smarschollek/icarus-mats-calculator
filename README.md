@@ -1,3 +1,5 @@
+This project uses material (images, item list, receipes) from the Icarus wiki at Fandom and that material is licensed under the Creative Commons Attribution-Share Alike License.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
