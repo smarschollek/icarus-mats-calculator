@@ -8367,7 +8367,7 @@ export const Items : Item[] = [
 			{
 				components: [
 					{ 
-						amount: 1,
+						amount: 0.1,
 						itemName: 'Wood'
 					},
 				]

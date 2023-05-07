@@ -1695,7 +1695,7 @@ Steel Rebar
 Steel Screw	
 1 	 Steel Ingot
 Stick	
-1 	 Wood
+0.1 	 Wood
 Stone	
 Sulfur	
 Tea	
